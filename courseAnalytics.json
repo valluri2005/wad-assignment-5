@@ -1,0 +1,35 @@
+{
+  "course_id": "CS101",
+  "course_name": "Data Structures",
+  "instructor": "Dr. Sharma",
+  "students": [
+    {
+      "student_id": 101,
+      "name": "Aarav",
+      "attendance_percentage": 80,
+      "internal_marks": 45,
+      "assignment_scores": [40, 42, 38]
+    },
+    {
+      "student_id": 102,
+      "name": "Diya",
+      "attendance_percentage": 70,
+      "internal_marks": 35,
+      "assignment_scores": [30, 32, 28]
+    },
+    {
+      "student_id": 103,
+      "name": "Rahul",
+      "attendance_percentage": 90,
+      "internal_marks": 50,
+      "assignment_scores": [45, 48, 50]
+    },
+    {
+      "student_id": 104,
+      "name": "Sneha",
+      "attendance_percentage": 60,
+      "internal_marks": 38,
+      "assignment_scores": [35, 30, 32]
+    }
+  ]
+}
