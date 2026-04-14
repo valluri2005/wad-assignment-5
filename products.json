@@ -1,0 +1,6 @@
+[
+  { "product_id": 1, "product_name": "Laptop", "price": 60000, "category": "Electronics", "rating": 4.5 },
+  { "product_id": 2, "product_name": "Shirt", "price": 1200, "category": "Clothing", "rating": 4.0 },
+  { "product_id": 3, "product_name": "Phone", "price": 30000, "category": "Electronics", "rating": 4.3 },
+  { "product_id": 4, "product_name": "Shoes", "price": 2500, "category": "Footwear", "rating": 4.1 }
+]
