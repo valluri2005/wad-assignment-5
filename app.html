@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product App</title>
+</head>
+<body>
+
+<h2>Product List</h2>
+
+<select id="categoryFilter">
+  <option value="All">All</option>
+  <option value="Electronics">Electronics</option>
+  <option value="Fashion">Fashion</option>
+</select>
+
+<div id="products"></div>
+
+<h3>Add Product</h3>
+<input id="name" placeholder="Name">
+<input id="price" placeholder="Price">
+<input id="category" placeholder="Category">
+<input id="rating" placeholder="Rating">
+<button onclick="addProduct()">Add</button>
+
+<h3 id="avgRating"></h3>
+
+<script>
+let products = [];
+
+function displayProducts(list) {
+  const container = document.getElementById("products");
+  container.innerHTML = "";
+
+  list.forEach(p => {
+    container.innerHTML += `
+      <p>${p.product_name} - ₹${p.price} - ${p.category} - ⭐${p.rating}</p>
+    `;
+  });
+
+  calculateAverage();
+}
+
+function calculateAverage() {
+  let total = products.reduce((sum, p) => sum + p.rating, 0);
+  let avg = total / products.length;
+  document.getElementById("avgRating").innerText = 
+    "Average Rating: " + avg.toFixed(2);
+}
+
+fetch('products.json')
+  .then(res => res.json())
+  .then(data => {
+    products = data;
+    displayProducts(products);
+  });
+
+document.getElementById("categoryFilter").addEventListener("change", function() {
+  let value = this.value;
+  if (value === "All") {
+    displayProducts(products);
+  } else {
+    let filtered = products.filter(p => p.category === value);
+    displayProducts(filtered);
+  }
+});
+
+function addProduct() {
+  const newProduct = {
+    product_id: products.length + 1,
+    product_name: document.getElementById("name").value,
+    price: parseFloat(document.getElementById("price").value),
+    category: document.getElementById("category").value,
+    rating: parseFloat(document.getElementById("rating").value)
+  };
+
+  products.push(newProduct);
+  displayProducts(products);
+}
+</script>
+
+</body>
+</html>
