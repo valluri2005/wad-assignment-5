@@ -1,7 +1,7 @@
 # WAD Assignment-5
 
-**Name:** Manasa Gunnam  
-**Reg No:** 2023000055  
+**Name:** Ramya Alluri
+**Reg No:** 2023004997
 
 ## Features
 - JSON data handling
