@@ -5,7 +5,7 @@
     "department": "CSE",
     "cgpa": 8.5,
     "isHosteller": true,
-    "skills": ["Java", "Python"]
+    "skills": ["C", "Java", "Python"]
   },
   {
     "student_id": 102,
@@ -13,11 +13,11 @@
     "department": "ECE",
     "cgpa": 7.8,
     "isHosteller": false,
-    "skills": ["MATLAB", "C"]
+    "skills": ["MATLAB", "C++"]
   },
   {
     "student_id": 103,
-    "name": "Rahul",
+    "name": "Rohan",
     "department": "IT",
     "cgpa": 9.1,
     "isHosteller": true,
@@ -26,17 +26,17 @@
   {
     "student_id": 104,
     "name": "Sneha",
-    "department": "EEE",
+    "department": "CSE",
     "cgpa": 8.2,
     "isHosteller": false,
-    "skills": ["Circuit Design", "C++"]
+    "skills": ["Python", "ML"]
   },
   {
     "student_id": 105,
     "name": "Kiran",
-    "department": "CSE",
-    "cgpa": 6.9,
+    "department": "EEE",
+    "cgpa": 7.5,
     "isHosteller": true,
-    "skills": ["HTML", "CSS"]
+    "skills": ["Electrical Design"]
   }
 ]
