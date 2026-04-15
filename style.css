@@ -1,0 +1,36 @@
+body {
+  font-family: Arial;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+h2, h3 {
+  color: #333;
+}
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+button {
+  background: #007bff;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+input, select {
+  margin: 5px;
+  padding: 5px;
+}
